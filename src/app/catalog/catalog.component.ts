@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
-import { ProductDetailsComponent } from "../product-details/product-details.component";
+import { ProductDetailsComponent } from '../product-details/product-details.component';
 
 @Component({
   selector: 'bot-catalog',
   imports: [ProductDetailsComponent],
+  //inline template (smaller components)
+  /*template: `
+    <ul>
+      <li>
+        <bot-product-details />
+      </li>
+    </ul>
+  `,
+  */
   templateUrl: './catalog.component.html',
-  styleUrl: './catalog.component.css'
+  styleUrl: './catalog.component.css',
 })
-export class CatalogComponent {
-
-}
+export class CatalogComponent {}
